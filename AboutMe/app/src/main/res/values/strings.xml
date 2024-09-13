@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="text_content">Machache Hinn</string>
+    <string name="yellow_star">Yellow Star</string>
+    <string name="bio_data">My name is Machache Hinn.\n
+    I\'m taking a Udacity Android Programming with Kotlin.\n
+    Striving yo be an Android Developer in an approximate of four months.\n
+    I intend to use my Android Skills in implementing IoT projects.\n
+    If you\'ve checked all of these and the issue persists, please provide\n
+        more code snippets or details about your app\'s configuration, \n
+        and I\'ll do my best to help you troubleshoot the issue.
+    It sounds like you\'re experiencing an issue where your Android app,
+        /n written in Kotlin, is launching without displaying the head.\n
+    So when I go to launch it has 5 identically named apps in the launch list.\n
+        These are named after the app but there is one for each activity.\n
+    Another way for removing the title specifically from an activity is by using a \n
+        getSupportActionBar().hide() method.\n
+    This lesson shows you how to create an implicit intent for a particular action,\n
+        and how to use it to start an activity that performs the action in another app.
+    </string>
+    <string name="nickname">What is your nickname?\n</string>
+    <string name="submitButton">Submit</string>
+</resources>
