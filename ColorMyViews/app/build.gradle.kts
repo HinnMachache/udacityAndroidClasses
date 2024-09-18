@@ -20,6 +20,11 @@ android {
         }
     }
 
+    buildFeatures {
+        //noinspection DataBindingWithoutKapt
+        dataBinding = true
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -29,6 +34,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
