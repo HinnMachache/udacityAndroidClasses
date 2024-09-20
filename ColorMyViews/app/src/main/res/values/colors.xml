@@ -10,4 +10,7 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="my_yellow_color">#FFC107</color>
+    <color name="my_green_color">#12C700</color>
+    <color name="my_red_color">#E54304</color>
 </resources>

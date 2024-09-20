@@ -1,4 +1,6 @@
 package com.example.colormyviews
+
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -16,8 +18,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun setListeners() {
         val clickableViews: List<View> = listOf(
-            binding.boxOneView, binding.boxTwoText, binding.boxThreeView,
-            binding.boxFourView, binding.boxFiveView
+            binding.boxOneView,
+            binding.boxTwoText,
+            binding.boxThreeView,
+            binding.boxFourView,
+            binding.boxFiveView,
+            binding.redButton,
+            binding.buttonGreen,
+            binding.buttonBlue
         )
 
         for (item in clickableViews) {
@@ -27,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("ResourceAsColor")
     private fun makeColored(view: View) {
         when (view.id) {
             R.id.box_one_view -> view.setBackgroundColor(android.graphics.Color.DKGRAY)
@@ -36,6 +45,11 @@ class MainActivity : AppCompatActivity() {
             R.id.box_three_view -> view.setBackgroundResource(android.R.color.holo_green_light)
             R.id.box_four_view -> view.setBackgroundResource(android.R.color.holo_green_dark)
             R.id.box_five_view -> view.setBackgroundResource(android.R.color.holo_green_light)
+
+            R.id.red_button -> binding.boxThreeView.setBackgroundResource(R.color.my_red_color)
+            R.id.button_green -> binding.boxFourView.setBackgroundResource(R.color.my_green_color)
+            R.id.button_blue -> binding.boxFiveView.setBackgroundResource(R.color.colorPrimary)
+
 
             else -> view.setBackgroundColor(android.graphics.Color.LTGRAY)
         }
