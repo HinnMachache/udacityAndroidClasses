@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FunFragments</string>
+    <string name="hello_text">Hello Android</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_first_fragment">First Fragment</string>
+    <string name="hello_second_fragment">Second Fragment</string>
+    <string name="main_fragment1">Fragment 1</string>
+    <string name="main_fragment2">Fragment 2</string>
+</resources>
